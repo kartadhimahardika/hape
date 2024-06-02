@@ -82,9 +82,10 @@ class _CreatePageState extends State<CreatePage> {
         backgroundColor: Colors.amber,
         foregroundColor: Colors.white,
         title: Text('Tambah Data'),
+        centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Form(
           key: _formKey,
           child: Column(
@@ -93,7 +94,9 @@ class _CreatePageState extends State<CreatePage> {
                 controller: title,
                 decoration: InputDecoration(
                   labelText: 'Title',
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
                 onSaved: (String? value) {
                   // This optional block of code can be used to run
@@ -112,7 +115,9 @@ class _CreatePageState extends State<CreatePage> {
                 controller: description,
                 decoration: InputDecoration(
                   labelText: 'Description',
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
                 onSaved: (String? value) {
                   // This optional block of code can be used to run
@@ -132,7 +137,9 @@ class _CreatePageState extends State<CreatePage> {
                 controller: harga,
                 decoration: InputDecoration(
                   labelText: 'Harga',
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
                 onSaved: (String? value) {
                   // This optional block of code can be used to run
@@ -155,6 +162,9 @@ class _CreatePageState extends State<CreatePage> {
                 style: ElevatedButton.styleFrom(
                   primary: Colors.amber,
                   onPrimary: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
               )
             ],
