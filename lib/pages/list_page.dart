@@ -31,12 +31,11 @@ class _ListPageState extends State<ListPage> {
   }
 
   final List<String> imgList = [
-    'banner.jpg',
-    'banner.jpg',
-    'banner.jpg',
-    'banner.jpg',
-    'banner.jpg',
-    'banner.jpg'
+    'banner1.jpg',
+    'banner2.jpg',
+    'banner3.jpg',
+    'banner4.jpg',
+    'banner5.jpg',
   ];
 
   @override
@@ -50,10 +49,10 @@ class _ListPageState extends State<ListPage> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: Text('Cuing Ped Phone Shop'),
+        title: Text('Sobat Gadget'),
         centerTitle: true,
         elevation: 5,
-        backgroundColor: Colors.grey[200],
+        backgroundColor: Colors.grey[600],
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {
@@ -209,7 +208,7 @@ class _ListPageState extends State<ListPage> {
             ),
           );
         },
-        backgroundColor: Colors.amberAccent,
+        backgroundColor: Colors.grey[600],
         child: Icon(Icons.add),
       ),
     );
