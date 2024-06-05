@@ -66,9 +66,9 @@ class _CreatePageState extends State<CreatePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.grey[600],
         foregroundColor: Colors.white,
-        title: Text('Tambah Data'),
+        title: Text('Tambah Produk'),
       ),
       body: SingleChildScrollView(
         child: Padding(

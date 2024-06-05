@@ -10,9 +10,9 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.grey[600],
         foregroundColor: Colors.white,
-        title: Text('Detail'),
+        title: Text('Detail Produk'),
         elevation: 0, // Remove the shadow under the app bar
       ),
       body: SingleChildScrollView(
@@ -54,18 +54,7 @@ class DetailPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Colors.amber,
-                  ),
-                ),
-                Spacer(), // Add a spacer to push the button to the right
-                ElevatedButton(
-                  onPressed: () {
-                    // Add to cart logic here
-                  },
-                  child: Text('Add to Cart'),
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.amber,
-                    onPrimary: Colors.white,
+                    color: Colors.grey[600],
                   ),
                 ),
               ],
